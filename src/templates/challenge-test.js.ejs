@@ -1,0 +1,9 @@
+import { <%= props.name %> } from "./../challenges/<%= props.name %>.challenge.js"
+
+describe("Default - <%= props.name %>", () => {
+  it.each([])("", () => {
+    const result = <%= props.name %>([]);
+
+    expect(result).toBe(``);
+  })
+})
